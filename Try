@@ -1,0 +1,18 @@
+    Try
+            txttotal.Text = Val(txtprice.Text) * Val(txtQuantity.Text)
+            If txtproductame.Text = "" Or txtQuantity.Text = "" Then
+                MsgBox("Please enter a product Or Quantity before you click load button")
+            Else
+                addbills()
+                loadbills()
+                totalamt()
+                gettotalitems()
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+
+
+
+         `
